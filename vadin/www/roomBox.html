@@ -1,0 +1,48 @@
+<div class="page" data-page="rooms-box">
+
+  <div class="navbar" >
+    <div class="navbar-inner">
+	  
+	  <div class="left"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>
+	
+      <div class="center">Vatsalya</div>
+      
+    </div>
+  </div>
+  
+  <div class="page-content">
+   <p class="buttons-row"> <span>
+   {{#each this}}<div class="roomtopoint" style="height:20%; width : 45%; float:left;margin:2.5%;box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);min-height:135px" data-context-name="rooms.{{@index}}.points">
+   <div style="border-bottom: solid 0.3px #F1EDED;height:50px"> 
+   <div style="float:left;padding: 8px;max-height:50px">
+   <i class="{{this.icon}}" style="font-size: 1.8em;"></i>
+  </div>
+  <div style="float:left;max-height:50px;padding-top: 15px;padding-left: 8px;">
+   <span style="max-height:50px;">{{this.name}}</span>
+</div>
+   </div>
+   
+   <div style="height:60px;padding:10px;">
+   <div class="row" style="height:50%;">
+          <div class="col-60">Power</div>
+          <div class="col-40">   {{@index}}.{{@index+5}} <span style="font-size:0.7em">kW</span></div>
+        </div>
+		
+		<div class="row" style="height:50%">
+          <div class="col-60">Active</div>
+          <div class="col-40">{{@index+2}}</div>
+        </div>
+   
+   </div>
+   
+   
+   
+   
+   </div>
+   {{#js_compare "this.seq == '2' || this.seq == '4' || this.seq == '6' || this.seq == '8' "}}</span></p><p class="buttons-row"><span> {{/js_compare}}
+
+   
+   {{/each}}</span>
+   </p>
+  </div>
+</div>          

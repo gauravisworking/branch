@@ -1,0 +1,31 @@
+<div class="page" data-page="rooms">
+
+  <div class="navbar" >
+    <div class="navbar-inner">
+	  
+	  <div class="left"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>
+	
+      <div class="center">Vatsalya</div>
+      
+    </div>
+  </div>
+  
+  <div class="page-content">
+    <div class="content-block-title">Rooms</div>
+    <div class="list-block">
+      <ul>
+        <!-- Iterate through frontend rooms -->
+        {{#each this}}
+        <li>
+          <!-- As a context name for this link we pass context path from template7Data root -->
+          <a href="#" class="item-link item-content roomtopoint" data-context-name="rooms.{{@index}}.points">
+              <div class="item-inner">
+                <div class="item-title">{{this.name}}</div>
+              </div>
+          </a>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>          

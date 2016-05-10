@@ -1,0 +1,62 @@
+
+
+<div class="page" data-page="points">
+
+
+<div class="navbar" >
+    <div class="navbar-inner">
+      
+      <div class="left"><a href="rooms.html" class="back link icon-only"><i class="icon icon-back"></i></a></div>
+	  <div class="center">{{roomName}}</div>
+	  <div class="right" id="point-page-right-icon" ><a href="#" class="link icon-only point-page-right-a" style="width: 50px;" ><i class="ion-android-more-vertical" style="font-size: 1.35em;" ></i></a></div>
+	
+	</div>
+	
+  </div>
+  
+  <div class="page-content">
+   <div class="content-block-title">Points</div>
+    <div class="list-block tablet-inset sortable" id="pointListId">
+	
+      <ul>
+        <!-- Iterate through frontend rooms -->
+        {{#each points}}
+        <li class="swipeout" >
+          <!-- As a context name for this link we pass context path from template7Data root -->
+		   <div class="item-content swipeout-content " >
+              <div class="item-inner" id={{this.b}}-{{this.a[0].p}}>
+                <div class="item-title">{{this.name}}</div>
+				   <div class="item-after">
+				   <!--{{#js_compare "this.name == 'Tube'"}} games {{/js_compare}}!-->
+					<label class="label-switch" id={{this.id}}  >
+					  <input type="checkbox"  {{this.state}} id={{this.id}}_checkbox />
+					  
+					  <div class="checkbox"></div>
+					</label>
+					
+				  </div>
+			   </div>
+			  </div>
+			  <div class="sortable-handler"></div>
+			  <div class="swipeout-actions-right">
+			    {{#js_compare "this.notify == 'yes'"}} <a href="#" dataObj={{this.id}} class = "point-notify color-white" style="height: 100%;border-radius: 0px;background-color: dodgerblue;"><i class="ion-android-notifications" style="font-size: 1.62em;"></i></a> {{/js_compare}}
+			    {{#js_compare "this.notify == 'no'"}} <a href="#"  dataObj={{this.id}} class = "point-notify color-white" style="height: 100%;border-radius: 0px;"><i class="ion-android-notifications-off" style="font-size: 1.62em;"></i></a> {{/js_compare}}
+			    
+				
+				{{#js_compare "this.sch == 'yes'"}} <a href="#" dataObj={{this.id}} class = "point-time color-white" style="height: 100%;border-radius: 0px;background-color: salmon;"><i class="ion-ios-stopwatch" style="font-size: 1.62em;"></i></a> {{/js_compare}}
+			    {{#js_compare "this.sch == 'no'"}} <a href="#"  dataObj={{this.id}} class = "point-time color-white" style="height: 100%;border-radius: 0px;"><i class="ion-ios-stopwatch-outline" style="font-size: 1.62em;"></i></a> {{/js_compare}}
+			    				
+				{{#js_compare "this.fav == 'yes'"}} <a href="#"  dataObj={{this.id}} class = "point-fav color-white" style="height: 100%;border-radius: 0px;background-color: gold;"><i class="ion-android-star" style="font-size: 1.62em;"></i></a> {{/js_compare}}
+				{{#js_compare "this.fav == 'no'"}} <a href="#"  dataObj={{this.id}} class = "point-fav color-white" style="height: 100%;border-radius: 0px;"><i class="ion-android-star-outline" style="font-size: 1.62em;"></i></a> {{/js_compare}}
+				
+			  </div>
+      
+
+        </li>
+		
+        {{/each}}
+					  
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#2196f3">
+    <title>Framework7 Material</title>
+    <link rel="stylesheet" href="build/css/framework7.material.css">
+    <link rel="stylesheet" href="build/css/framework7.material.colors.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/kitchen-sink.css">
+	<link rel="stylesheet" href="css/ionicons/css/ionicons.css">
+	<link rel="stylesheet" href="css/switch.css">
+	<style>
+	
+	@font-face {
+	  font-family: "Kimberley";
+	  src: url("css/EXO_2_OTF/Exo2-Light.otf");
+	}
+	body { font-family: "Kimberley", sans-serif }
+
+	.getToBottom{
+	    bottom: 0px;
+		position: absolute;
+		width: 100%;
+	}
+	.coverPic{
+	background-image: url(resources/coverPic.jpg); 
+	height: 110px;
+	}
+	.fromTop{
+	top: 70px;
+    position: absolute;
+   
+	}
+	</style>
+  </head>
+  <body>
+  <script src="cordova.js"></script>
+    <div class="statusbar-overlay"></div>
+    <div class="panel-overlay"></div>
+    <div class="panel panel-left panel-cover">
+      <div class="view navbar-fixed">
+        <div class="pages">
+          <div data-page="panel-left" class="page">
+            
+            <div class="page-content" style="padding-top: 0px;">
+              
+			  
+				<div class="coverPic">
+				<a href="account.html" class="button color-white close-panel" style="top:55px;height:50px">
+				    <div class="row" style="height:50px;" >
+					  <div class="col-80" style="overflow: hidden;PADDING-left: 5px;"><div style="height:25px;text-align: left;text-transform: capitalize;">Gaurav Solanke</div><div style="height:25px;text-transform: lowercase;text-align: left;position: relative;top: -7px;color: rgba(255, 255, 255, 0.54);">solanke.gaurav5592@gmail.com</div></div>
+					  <div class="col-20"><i class="ion-arrow-down-b" style="top: 10px;position: relative;font-size: 1.4em;"></i></div>
+					</div>
+				</a>
+				</div>
+				 
+				  <div class="list-block" style="margin:0px;">
+					<ul>
+					
+					<li><a href="#" class="item-link item-content close-panel open-controls">
+						<div class="item-media"><i class="ion-ios-game-controller-a-outline" style="font-size: 1.8em;" ></i></div>
+						<div class="item-inner" style="background-image:url("") ;"> 
+						  <div class="item-title">Controls</div>
+						</div></a></li>
+						
+						<li><a href="#" class="item-link item-content close-panel open-scene">
+						<div class="item-media"><i class="icon icon-form-toggle" style="font-size: 1.8em;" ></i></div>
+						<div class="item-inner" style="background-image:url("") ;"> 
+						  <div class="item-title">Scenes</div>
+						</div></a></li>
+						
+						<li><a href="#" class="item-link item-content close-panel open-fav">
+						<div class="item-media"><i class="ion-android-star-outline" style="font-size: 1.8em;" ></i></div>
+						<div class="item-inner" style="background-image:url("") ;"> 
+						  <div class="item-title">Favorites</div>
+						</div></a></li>
+						
+						<li><a href="activities.html" class="item-link item-content close-panel">
+						<div class="item-media"><i class="ion-film-marker" style="font-size: 1.7em;" ></i></div>
+						<div class="item-inner" style="background-image:url("") ;"> 
+						  <div class="item-title">Activities</div>
+						</div></a></li>
+						
+						<li><a href="messages.html" class="item-link item-content close-panel">
+						<div class="item-media"><i class="ion-ios-chatboxes-outline" style="font-size: 1.7em;" ></i></div>
+						<div class="item-inner" style="background-image:url("") ;"> 
+						  <div class="item-title">Chat Room</div>
+						</div></a></li>
+					  
+					</ul>
+				  </div>
+				  
+				  <div class="list-block" style="margin:0px;">
+					<ul>
+					<li><a href="settings.html" class="item-link item-content close-panel">
+						<div class="item-media"><i class="ion-android-settings" style="font-size: 1.7em;" ></i></div>
+						<div class="item-inner" style="background-image:url("") ;"> 
+						  <div class="item-title">Settings</div>
+						</div></a></li>
+						<li><a href="#" class="item-link item-content">
+						<div class="item-media"><i class="ion-help" style="font-size: 1.5em;" ></i></div>
+						<div class="item-inner" style="background-image:url("") ;"> 
+						  <div class="item-title">Help & feedback</div>
+						</div></a></li>
+					</ul>
+				  </div>
+
+			</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-right panel-reveal">
+      <div class="view view-right">
+        <div class="pages navbar-fixed">
+          <div data-page="panel-right1" class="page">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="center">Right Panel</div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="content-block">
+                <p>This is a right side panel. You can close it by clicking outsite or on this link: <a href="#" class="close-panel">close me</a>. You can put here anything, even another isolated view, try it: </p>
+              </div>
+              <div class="list-block">
+                <ul>
+                  <li><a href="panel-right2.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">Right panel page 2</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="panel-right3.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">Right panel page 3</div>
+                        </div>
+                      </div></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="views">
+      <div class="view view-main">
+        <div class="pages navbar-fixed">
+          <div data-page="index" class="page">
+           gaurav
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+	<div class="popover popover-menu">
+      <div class="popover-inner">
+	 
+		<div class="list-block">
+		  <div class="row no-gutter" style="height:48px;border-bottom: solid 0.3px #F1EDED">
+          <div class="col-66" style="padding: 0px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">
+			<a href="#" class="button" style="height: 48px;padding: 8px;text-align: left;font-size: 14px;font-weight: 500;color: rgba(0, 0, 0, 0.54);">&nbsp;&nbsp;&nbsp;Scenes</a></div>
+          <div class="col-33">
+			<a href="#" class="button" style="height: 48px;padding: 8px;"><i class="ion-android-add"></i></a></div>
+        </div>
+
+			<ul>
+			<li>
+			  <label class="label-radio item-content">
+				<input type="radio" name="ks-radio" value="Books"/>
+				<div class="item-media"><i class="icon icon-form-radio" style="border-color: #868686;"></i></div>
+				<div class="item-inner" style="margin:0px;">
+				  <div class="item-title">Morning</div>
+				</div>
+			  </label>
+			</li>
+			<li>
+			  <label class="label-radio item-content">
+				<input type="radio" name="ks-radio" value="Movies"/>
+				<div class="item-media"><i class="icon icon-form-radio" style="border-color: #868686;"></i></div>
+				<div class="item-inner" style="margin:0px;">
+				  <div class="item-title">Gaming</div>
+				</div>
+			  </label>
+			</li>
+			<li>
+			  <label class="label-radio item-content">
+				<input type="radio" name="ks-radio" value="Food"/>
+				<div class="item-media"><i class="icon icon-form-radio" style="border-color: #868686;"></i></div>
+				<div class="item-inner" style="margin:0px;">
+				  <div class="item-title">Movie Time</div>
+				</div>
+			  </label>
+			</li>
+			<li>
+			  <label class="label-radio item-content">
+				<input type="radio" name="ks-radio" value="Drinks"/>
+				<div class="item-media"><i class="icon icon-form-radio" style="border-color: #868686;" ></i></div>
+				<div class="item-inner" style="margin:0px;">
+				  <div class="item-title">Out of Room</div>
+				</div>
+			  </label>
+			</li>
+		  </ul>
+		</div>
+        <div class="list-block">
+          <ul>
+			<li><a href="#" class="list-button item-link toggleSortMode">Rearrange</a></li>
+            <li><a href="popover.html" class="list-button item-link">Filter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="popover popover-music">
+      <div class="popover-inner">
+        <div class="list-block media-list">
+          <ul>
+            <li><a href="#" class="item-link item-content">
+                <div class="item-media"><img src="http://lorempixel.com/88/88/people/1" width="44"></div>
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title">Yellow Submarine</div>
+                  </div>
+                  <div class="item-subtitle">Beatles</div>
+                </div></a></li>
+            <li><a href="#" class="item-link item-content">
+                <div class="item-media"><img src="http://lorempixel.com/88/88/people/2" width="44"></div>
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title">Don't Stop Me Now</div>
+                  </div>
+                  <div class="item-subtitle">Queen</div>
+                </div></a></li>
+            <li><a href="#" class="item-link item-content">
+                <div class="item-media"><img src="http://lorempixel.com/88/88/people/3" width="44"></div>
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title">Billie Jean</div>
+                  </div>
+                  <div class="item-subtitle">Michael Jackson</div>
+                </div></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="popover popover-contacts">
+      <div class="popover-inner">
+        <div class="list-block media-list">
+          <ul>
+            <li class="item-content">
+              <div class="item-media"><img src="http://lorempixel.com/88/88/people/1" width="40"></div>
+              <div class="item-inner">
+                <div class="item-title-row">
+                  <div class="item-title">Ali Connors</div>
+                </div>
+              </div>
+            </li>
+            <li class="item-content">
+              <div class="item-media"><img src="http://lorempixel.com/88/88/people/2" width="40"></div>
+              <div class="item-inner">
+                <div class="item-title-row">
+                  <div class="item-title">Sandra Adams</div>
+                </div>
+              </div>
+            </li>
+            <li class="item-content">
+              <div class="item-media"><img src="http://lorempixel.com/88/88/people/3" width="40"></div>
+              <div class="item-inner">
+                <div class="item-title-row">
+                  <div class="item-title">Trevor Hansen</div>
+                </div>
+              </div>
+            </li>
+            <li><a href="#" class="item-link item-content bg-purple color-white ripple-white">
+                <div class="item-media"><i class="icon ks-icon-edit"></i></div>
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title">Add New</div>
+                  </div>
+                </div></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="login-screen">
+      <div class="view">
+        <div class="page">
+          <div class="page-content login-screen-content">
+            <div class="login-screen-title">Casa Innovations</div>
+            <form>
+              <div class="list-block inputs-list">
+                <ul>
+                  <li class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title label">Username</div>
+                      <div class="item-input">
+                        <input type="text" name="username" placeholder="Your username">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content">
+                    <div class="item-inner">
+                      <div class="item-title label">Password</div>
+                      <div class="item-input">
+                        <input type="password" name="password" placeholder="Your password">
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="content-block"><a href="#" class="button button-big">Sign In</a></div>
+              <div class="content-block">
+                <a href="#" class="button button-big">Register new User</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="picker-modal picker-modal-demo">
+      <div class="toolbar">
+        <div class="toolbar-inner">
+          <div class="left"></div>
+          <div class="right"><a href="#" class="link close-picker">Done</a></div>
+        </div>
+      </div>
+      <div class="picker-modal-inner">
+        <div class="content-block">Integer mollis nulla id nibh elementum finibus. Maecenas eget fermentum ipsum. Sed sagittis condimentum nisl at tempus. Duis lacus libero, laoreet vitae ligula a, aliquet eleifend sapien. Nullam sodales viverra sodales.</div>
+      </div>
+    </div>
+	
+	
+    <script type="text/javascript" src="build/js/framework7.js"></script>
+	<script type="text/javascript" src="lib/backendless.js"></script>
+	<script type="text/javascript" src="js/socket.io.js"></script>
+	<script type="text/javascript" src="js/initBackendless.js"></script>
+	<script type="text/javascript" src="js/gblFunctions.js"></script>
+	<script type="text/javascript" src="js/data.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/roomBox.js"></script>
+	<script type="text/javascript" src="js/points.js"></script>
+	<script type="text/javascript" src="js/scenes.js"></script>
+	<script type="text/javascript" src="js/favorites.js"></script>
+	<script type="text/javascript" src="js/colorTheme.js"></script>
+	<script type="text/javascript" src="js/auth.js"></script>
+	<script type="text/javascript" src="js/messages.js"></script>
+  </body>
+</html>
